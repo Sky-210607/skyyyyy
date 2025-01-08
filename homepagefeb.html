@@ -1,0 +1,240 @@
+<html>
+<head>
+    <title>homepage</title>
+    <script src="https://kit.fontawesome.com/e895b878fe.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgb(168, 2, 132);
+            z-index: 100;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #ffffff;
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .navbar {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        .navbar a {
+            padding: 20px 0;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: 0.2s;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+        .homepage {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            width: 100%;
+            background: url("download.jpeg") no-repeat center/cover;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .homepage::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .homepage .content {
+            position: relative;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .homepage .text {
+            color: white;
+            margin-bottom: 50px;
+        }
+        .homepage .text h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .homepage a {
+            color: white;
+            text-decoration: none;
+            background: #61014c80;
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: 2px solid rgba(245, 189, 5, 0.5);
+            box-shadow: rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .homepage a:hover {
+            color: white;
+            background: #b90d8e;
+        }
+        section {
+            padding-top: 80px;
+        }
+        .section-title {
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+        }
+        .content-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .content-item {
+            display: flex;
+            flex: 1 1 100%;
+            gap: 20px;
+            align-items: center;
+        }
+        .content-item img {
+            width: 25%;
+            height: 350px;
+            border-radius: 30%;
+            box-shadow: none;
+        }
+        .content-item:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+        .text-content {
+            max-width: 500px;
+            padding: 20px;
+            background: #f0f0f5;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .flynn-rider-box {
+            background: #03627ab9; 
+        }
+        .rapunzel-box {
+            background: #eb6bcbc2;
+        }
+        .text-content:before, .text-content:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: inherit;
+            border-radius: 50%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .text-content:before {
+            top: -10px;
+            left: 30px;
+        }
+        .text-content:after {
+            bottom: -10px;
+            right: 30px;
+        }
+        .text-content p {
+            font-size: 20px;
+        }
+        .text-content h3 {
+            font-size: 25px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button-container a {
+            color: white;
+            text-decoration: none;
+            background: #61014c80;
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: 2px solid rgba(245, 189, 5, 0.5);
+            box-shadow: rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .button-container a:hover {
+            color: white;
+            background: #b90d8e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar container flex">
+            <h2 class="logo"><a href="#">:3</a></h2>
+            <ul class="nav-links flex">
+                <li><a href="#home">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#portfolio">portfolio</a></li> 
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="homepage" id="home">
+        <div class="content flex">
+            <div class="text">
+                <h1>Excited to see what this website holds?</h1>
+            </div>
+            <a href="#services">Explore</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Acknowledge from our characters</h2>
+                <p>Our characters have something to say, scroll down to know</p>
+            </div>
+            <div class="content-flex">
+                <div class="content-item">
+                    <img src="R.png" alt="First Image">
+                    <div class="text-content flynn-rider-box">
+                        <h3>Flynn Rider</h3>
+                        <p>Hey there! The name's Flynn Rider, you can say I stole the crown once along with Rapunzel's heart. But here I see a gorgeous woman whose love with their partner resembles ours. Rapunzel, do you feel it too?</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="4866c636-2ae3-43b7-922e-cd1c7d1c2c0d.jpeg" alt="Second Image">
+                    <div class="text-content rapunzel-box">
+                        <h3>Rapunzel</h3>
+                        <p>You're right, Eugene. How about we have a look at their story? a fairytale written in the real world. Click the button below to unveil the magical tale of Moon and Sky. Wondering how I know your name? you're well known by everyone and "your" Sky told us hehe.</p>
+                        <div class="button-container">
+                            <a href="memories.html">Click here!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
